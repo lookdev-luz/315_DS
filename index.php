@@ -1,39 +1,72 @@
 <?php
 
-$nome = "Lucas";
-$idade = 23;
-$resultado;
+$nome = "";
+$idade = 0;
+$resultado = "";
 
-if ($idade > 18) {
-    $resultado = "maior";
-} else {
-    $resultado = "menor";    
+if (isset($_POST["nome"]) && isset($_POST["idade"])) {
+
+    $nome = $_POST["nome"];
+    $idade = $_POST["idade"];
+
+    if ($idade >= 18) {
+        $resultado = "maior";
+    } else {
+        $resultado = "menor";
+    }
 }
 
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <title>TESTE</title>
+    <title>Verificador de Idade</title>
 
     <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
 
-    <form method="POST">
+    <div class="container">
 
-        <label>Nome:</label>
-        <input type="text" name="nome">
+        <h1>Verificador de idade</h1>
 
-        <label>Idade:</label>
-        <input type="number" name="idade">
+        <form method="POST">
 
-        <button type="submit">Verificar</button>
+            <label for="nome">Nome:</label>
+            <input 
+                type="text" 
+                id="nome" 
+                name="nome"
+                required
+            >
 
-    </form>
+            <label for="idade">Idade:</label>
+            <input 
+                type="number" 
+                id="idade" 
+                name="idade"
+                required
+            >
+
+            <button type="submit">
+                Verificar
+            </button>
+
+        </form>
+
+        <?php if ($resultado != "") { ?>
+
+            <h2>
+                O <?= $nome ?> é <?= $resultado ?> de idade.
+            </h2>
+
+        <?php } ?>
+
+    </div>
 
 </body>
 </html>
