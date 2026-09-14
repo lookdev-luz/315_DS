@@ -1,8 +1,27 @@
 <?php
 
 $nome = "Lucas";
-$idade = 25;
+$idade = 23;
+$resultado;
+
+if ($idade > 18) {
+    $resultado = "maior";
+} else {
+    $resultado = "menor";    
+}
+
 ?>
 
-<h1>Olá <?=$nome?></h1>
-<p>Você tem <?=$idade?> anos.</p>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TESTE</title>
+</head>
+
+<body>
+
+<h1>O <?= $nome ?> é <?= $resultado ?> de idade</h1>
+
+</body>
+</html>
