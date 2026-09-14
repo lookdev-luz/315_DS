@@ -17,11 +17,13 @@ if ($idade > 18) {
 <head>
     <meta charset="UTF-8">
     <title>TESTE</title>
+
+    <link rel="stylesheet" href="app.css">
 </head>
 
 <body>
 
-<h1>O <?= $nome ?> é <?= $resultado ?> de idade</h1>
+    <h1>O <?= $nome ?> é <?= $resultado ?> de idade</h1>
 
 </body>
 </html>
