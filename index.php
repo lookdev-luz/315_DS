@@ -4,7 +4,7 @@ $nome = "";
 $idade = 0;
 $resultado = "";
 
-if (isset($_POST["nome"]) && isset($_POST["idade"])) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $nome = $_POST["nome"];
     $idade = $_POST["idade"];
@@ -24,7 +24,6 @@ if (isset($_POST["nome"]) && isset($_POST["idade"])) {
 <head>
     <meta charset="UTF-8">
     <title>Verificador de Idade</title>
-
     <link rel="stylesheet" href="app.css">
 </head>
 
@@ -37,24 +36,12 @@ if (isset($_POST["nome"]) && isset($_POST["idade"])) {
         <form method="POST">
 
             <label for="nome">Nome:</label>
-            <input 
-                type="text" 
-                id="nome" 
-                name="nome"
-                required
-            >
+            <input type="text" id="nome" name="nome" required>
 
             <label for="idade">Idade:</label>
-            <input 
-                type="number" 
-                id="idade" 
-                name="idade"
-                required
-            >
+            <input type="number" id="idade" name="idade" required>
 
-            <button type="submit">
-                Verificar
-            </button>
+            <button type="submit">Verificar</button>
 
         </form>
 
