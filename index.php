@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         </form>
 
-        <?php if ($resultado != "") { ?>
+        <?php if ($resultado != "") { ?> 
 
             <h2>
                 O <?= $nome ?> é <?= $resultado ?> de idade.
