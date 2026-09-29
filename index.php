@@ -8,6 +8,10 @@
         nome VARCHAR(100),
         idade INT
     )";
+
+    $pdo->exec($sql);
+
+    echo "\nTabela criada com sucesso!";
 ?>
 <!DOCTYPE html>
 <html lang="en">
