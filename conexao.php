@@ -3,7 +3,7 @@
 // dados para conexão mysql
 $host = "localhost";
 $banco = "eduardoa755";
-$usuario = "eduaroda755";
+$usuario = "eduardoa755";
 $senha = "755!@#";
 
 // PDO = PHP Data Objects - É uma ferramenta do PHP para conversar com banco de dados. 
