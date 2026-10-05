@@ -1,6 +1,6 @@
 <?php
 
-require "conexao.php";
+require __DIR__ . "/../conexao.php";
 
 // Criando a tabela
 $sql = "CREATE TABLE IF NOT EXISTS jogos (
