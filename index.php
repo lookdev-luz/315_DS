@@ -127,109 +127,71 @@
                 </div>
                 <!-- PROJETO 2 -->
                 <div class="projeto-card">
-
                     <div class="projeto-numero">
                         02
                     </div>
-
                     <h3>Verificação de notas</h3>
-
                     <p>
                         Aplicação criada para trabalhar com
                         notas, médias e estruturas condicionais.
                     </p>
-
                     <div class="tecnologias">
                         <span>PHP</span>
                         <span>HTML</span>
                         <span>CSS</span>
                     </div>
-
                     <a href="projetos/notas.php" class="link-projeto">
                         Ver projeto →
                     </a>
-
                 </div>
-
-
                 <!-- PROJETO 3 -->
                 <div class="projeto-card">
-
                     <div class="projeto-numero">
                         03
                     </div>
-
                     <h3>Cadastro de jogos</h3>
-
                     <p>
                         Atividade desenvolvida para praticar
                         o desenvolvimento web junto do MySQL.
                     </p>
-
                     <div class="tecnologias">
                         <span>HTML</span>
                         <span>CSS</span>
                         <span>PHP</span>
                         <span>MySQL</span>
                     </div>
-
                     <a href="projetos/jogos.php" class="link-projeto">
                         Ver projeto →
                     </a>
-
                 </div>
-
             </div>
-
         </section>
-
-
-        <!-- =========================
-             CONTATO
-        ========================== -->
         <section id="contato" class="secao secao-destaque">
-
             <h2 class="titulo-secao">Contato</h2>
-
             <p class="subtitulo-secao">
                 Quer entrar em contato comigo?
             </p>
-
             <div class="contato-container">
-
                 <div class="contato-item">
                     <h3>Whatsapp</h3>
                     <p>+55 41 99797-2822</p>
                 </div>
-
                 <div class="contato-item">
                     <h3>GitHub</h3>
                     <p>github.com/lookdev-luz</p>
                 </div>
-
                 <div class="contato-item">
                     <h3>LinkedIn</h3>
                     <p>linkedin.com/in/lucasdluz</p>
                 </div>
-
             </div>
-
         </section>
-
     </main>
-
-
-    <!-- =========================
-         RODAPÉ
-    ========================== -->
     <footer>
-
         <p>
             Desenvolvido por <a href="https://lucasluz.me">Lucas Luz</a> • 2026
         </p>
-
     </footer>
-
 </body>
 
 </html>

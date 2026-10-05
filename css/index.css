@@ -1,6 +1,4 @@
-/* =========================================
-   CONFIGURAÇÕES GERAIS
-========================================= */
+/* CONFIGURAÇÕES GERAIS */
 
 * {
     margin: 0;
@@ -19,11 +17,7 @@ body {
     line-height: 1.6;
 }
 
-
-/* =========================================
-   MENU
-========================================= */
-
+/* MENU */
 header {
     background-color: #111827;
     position: sticky;
@@ -70,10 +64,8 @@ header {
 
 .inicio {
     min-height: 85vh;
-
     display: flex;
     align-items: center;
-
     background-color: #111827;
     color: white;
 }
@@ -81,7 +73,6 @@ header {
 .inicio-conteudo {
     width: 1100px;
     max-width: 90%;
-
     margin: auto;
 }
 
