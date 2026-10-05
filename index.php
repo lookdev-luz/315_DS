@@ -39,72 +39,50 @@
              INÍCIO
         ========================== -->
         <section id="inicio" class="inicio">
-
             <div class="inicio-conteudo">
-
                 <p class="saudacao">Olá! Eu sou</p>
-
                 <h1>Lucas Luz</h1>
-
                 <h2>Desenvolvedor em formação</h2>
-
                 <p>
                     Professor de Desenvolvimento de Sistemas,
                     engenheiro de inteligência artificial, e
                     CEO de um ecossistema de tecnologia da
                     informação.
                 </p>
-
                 <a href="#projetos" class="botao">
                     Ver meus projetos
                 </a>
 
             </div>
-
         </section>
-
-
         <!-- =========================
              SOBRE MIM
         ========================== -->
         <section id="sobre" class="secao">
-
             <h2 class="titulo-secao">Sobre mim</h2>
-
             <div class="sobre-conteudo">
-
                 <div class="foto">
                     JS
                 </div>
-
                 <div class="sobre-texto">
-
                     <h3>Quem sou eu?</h3>
-
                     <p>
                         Meu nome é Lucas Luz e sou professor
                         de Desenvolvimento de Sistemas.
                     </p>
-
                     <p>
                         Atualmente estou dando aulas de desenvolvimento
                         web, programação e criação de sistemas.
                         Este portfólio reúne alguns dos projetos
                         desenvolvidos durante o curso junto dos alunos.
                     </p>
-
                     <p>
                         Meu objetivo é continuar evoluindo como
                         desenvolvedor e aprender novas tecnologias.
                     </p>
-
                 </div>
-
             </div>
-
         </section>
-
-
         <!-- =========================
              HABILIDADES
         ========================== -->
