@@ -31,6 +31,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Jogo cadastrado com sucesso!";
 }
 
+// Buscar todos os jogos registrados no banco de dados
+$buscar = "SELECT * FROM jogos";
+
+// exec() = executa algo quando você NÃO precisa receber registros de volta.
+// query() = executa uma consulta quando você QUER receber dados de volta.
+$stmt = $pdo->query($buscar);
+
+$jogos = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
@@ -90,6 +99,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </button>
 
     </form>
+
+    <h2>JOGOS CADASTRADOS</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Gênero</th>
+            <th>Nota</th>
+        </tr>
+
+        <!-- foreach() -> Para cada item nessa lista, faça alguma coisa com X variável -->
+        <?php foreach($jogos as $jogo) { ?>
+            <tr>
+                <td><?= $jogo["id"] ?></td>
+                <td><?= $jogo["nome"] ?></td>
+                <td><?= $jogo["genero"] ?></td>
+                <td><?= $jogo["nota"] ?></td>
+            </tr>
+        <?php } ?>
+
+    </table>
+
 
 </body>
 
