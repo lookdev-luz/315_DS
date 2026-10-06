@@ -56,73 +56,17 @@
              DESENVOLVA O PROJETO A PARTIR DAQUI -->
         <section class="conteudo-projeto">
             <h2>Cadastro de Jogos</h2>
-            <form method="POST">
-                <label for="nome">
-                    Nome do jogo:
-                </label>
-                <input
-                    type="text"
-                    id="nome"
-                    name="nome"
-                    required
-                >
-                <label for="genero">
-                    Gênero:
-                </label>
-                <input
-                    type="text"
-                    id="genero"
-                    name="genero"
-                    required
-                >
-                <label for="nota">
-                    Nota:
-                </label>
-                <input
-                    type="number"
-                    id="nota"
-                    name="nota"
-                    min="0"
-                    max="10"
-                    required
-                >
-                <button type="submit">
-                    Cadastrar
-                </button>
-            </form>
         </section>
 
         <!-- FIM DA ATIVIDADE -->
         <div class="voltar-projetos">
-
-            <a href="../index.php#projetos">
-                ← Voltar para projetos
-            </a>
-
+            <a href="../index.php#projetos"> ← Voltar para projetos </a>
         </div>
-
-
     </main>
 
-
-
-    <!-- =========================================
-         RODAPÉ
-    ========================================== -->
-
+    <!-- RODAPÉ -->
     <footer>
-
-        <p>
-            Desenvolvido por
-            <a href="https://lucasluz.me">
-                Lucas Luz
-            </a>
-            • 2026
-        </p>
-
+        <p> Desenvolvido por <a href="https://lucasluz.me"> Lucas Luz </a> • 2026 </p>
     </footer>
-
-
 </body>
-
 </html>
