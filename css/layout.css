@@ -1,0 +1,81 @@
+/* Cabeçalho da atividade */
+
+.cabecalho-projeto {
+    background-color: #111827;
+    color: white;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.cabecalho-projeto h1 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.cabecalho-projeto p {
+    color: #cccccc;
+}
+
+
+/* Pequeno texto acima do título */
+
+.projeto-tipo {
+    color: #60a5fa !important;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    margin-bottom: 5px;
+}
+
+
+/* Área onde cada atividade será desenvolvida */
+
+.conteudo-projeto {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px 20px;
+}
+
+
+/* Botão/link para voltar */
+
+.voltar-projetos {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 0 20px 50px;
+}
+
+.voltar-projetos a {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.voltar-projetos a:hover {
+    text-decoration: underline;
+}
+
+
+/* Links do rodapé */
+
+footer a {
+    color: white;
+
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

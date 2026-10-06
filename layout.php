@@ -23,7 +23,7 @@
 
 
     <!-- CSS GERAL DO PORTFÓLIO -->
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/layout.css">
 
 
     <!-- CSS ESPECÍFICO DA ATIVIDADE -->
