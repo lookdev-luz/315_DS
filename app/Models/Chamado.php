@@ -1,8 +1,11 @@
 <?php
-    //READ - Ler todos os chamados
-    function lerChamados() {
-        $arquivo = __DIR__ . "/../dados/chamados.json";
 
+class Chamado{
+
+    //READ - Ler todos os chamados
+    public function lerChamados() {
+        $arquivo = __DIR__ . "/../dados/chamados.json";
+ 
         // Verificação se o arquivo .json já existe
         if(!file_exists($arquivo)){
             file_put_contents($arquivo, "[]");
@@ -18,7 +21,7 @@
     }
 
     //Salvar os chamados no JSON
-    function salvarChamados($chamados) {
+    public function salvarChamados($chamados) {
         $arquivo = __DIR__ . "/../dados/chamados.json";
 
         return file_put_contents(
@@ -31,12 +34,12 @@
     }
 
     //CREATE - Cadastrar chamados
-    function cadastrarChamados($nome, $setor, $equipamento, $descricao, $prioridade) {
+    public function cadastrarChamados($nome, $setor, $equipamento, $descricao, $prioridade) {
         if (trim($nome) === "" || trim($descricao) === "") {
             return false;
         }
 
-        $chamados = lerChamados();
+        $chamados = $this->lerChamados();
 
         $novoChamado = [
             "nome" => trim($nome),
@@ -49,12 +52,12 @@
 
         $chamados[] = $novoChamado;
 
-        return salvarChamados($chamados);
+        return $this->salvarChamados($chamados);
     }
 
     //UPDATE - Atualizar status do chamado
-    function atualizarChamado($posicao, $novoStatus) {
-        $chamados = lerChamados();
+    public function atualizarChamado($posicao, $novoStatus) {
+        $chamados = $this->lerChamados();
         
         //Listar status permitidos para os chamados
         $statusPermitidos = [
@@ -83,12 +86,12 @@
 
         $chamados[$posicao]["status"] = $novoStatus;
 
-        return salvarChamados($chamados);
+        return $this->salvarChamados($chamados);
     }
 
     //DELETE - Excluir chamados
-    function excluirChamado($posicao) {
-        $chamados = lerChamados();
+    public function excluirChamado($posicao) {
+        $chamados = $this->lerChamados();
 
         if (!isset($chamados[$posicao])) {
             return false;
@@ -101,12 +104,12 @@
         $chamados = array_values($chamados);
 
         // SALVAR OS CHAMADOS NOVAMENTE PELA FUNÇÃO salvarChMADOS()
-        return salvarChamados($chamados);
+        return $this->salvarChamados($chamados);
     }
 
     //Relatório de atendimentos
-    function gerarRelatorio() {
-        $chamados = lerChamados();
+    public function gerarRelatorio() {
+        $chamados = $this->lerChamados();
 
         $relatorio = [
             "total" => count($chamados),
@@ -127,4 +130,10 @@
 
         return $relatorio;
     }
+
+
+}
+
+
+
 ?>
