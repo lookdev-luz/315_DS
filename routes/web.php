@@ -7,11 +7,11 @@
     return [
         'GET' => [
             'portfolio' => [new PortfolioController(), 'index'],
-            'helpdesk' => [new HelpdeskController(), 'index'],
+            //'helpdesk' => [new HelpdeskController(), 'index'],
             //outras atividades...
         ],
         'POST' => [
-            'helpdesk' => [new HelpdeskController(), '']
+            //'helpdesk' => [new HelpdeskController(), '']
         ]
     ];
 
