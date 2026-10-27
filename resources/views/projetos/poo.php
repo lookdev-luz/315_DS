@@ -84,12 +84,8 @@ foreach($personagens as $p) {
     $p->atacar();
 }
 
-// Diminuindo a vida do Guerreiro
-$guerreiro->setVida(60);
-
 echo "Vida antes da cura: " . $guerreiro->getVida() . "\n";
 
-// Chloe cura Lucas
 $curandeiro->curar($guerreiro, 25);
 
 echo "Vida depois da cura: " . $guerreiro->getVida() . "\n";
