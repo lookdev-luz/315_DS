@@ -120,7 +120,7 @@
                         <span>CSS</span>
                         <span>PHP</span>
                     </div>
-                    <a href="projetos/idade.php" class="link-projeto">
+                    <a href="/index.php?rota=helpdesk" class="link-projeto">
                         Ver projeto →
                     </a>
                 </div>
@@ -129,17 +129,16 @@
                     <div class="projeto-numero">
                         02
                     </div>
-                    <h3>Verificação de notas</h3>
+                    <h3>Projeto 02</h3>
                     <p>
-                        Aplicação criada para trabalhar com
-                        notas, médias e estruturas condicionais.
+                        Projeto 02.
                     </p>
                     <div class="tecnologias">
                         <span>PHP</span>
                         <span>HTML</span>
                         <span>CSS</span>
                     </div>
-                    <a href="projetos/notas.php" class="link-projeto">
+                    <a href="/index.php?rota=helpdesk" class="link-projeto">
                         Ver projeto →
                     </a>
                 </div>
@@ -148,10 +147,9 @@
                     <div class="projeto-numero">
                         03
                     </div>
-                    <h3>Cadastro de jogos</h3>
+                    <h3>Projeto 03</h3>
                     <p>
-                        Atividade desenvolvida para praticar
-                        o desenvolvimento web junto do MySQL.
+                        Projeto 03.
                     </p>
                     <div class="tecnologias">
                         <span>HTML</span>
@@ -159,7 +157,7 @@
                         <span>PHP</span>
                         <span>MySQL</span>
                     </div>
-                    <a href="projetos/jogos.php" class="link-projeto">
+                    <a href="/index.php?rota=helpdesk" class="link-projeto">
                         Ver projeto →
                     </a>
                 </div>
