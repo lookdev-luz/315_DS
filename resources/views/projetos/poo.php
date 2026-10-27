@@ -12,7 +12,7 @@
 //Mostrar o que é necessário e esconder detalhes complicados de funcionamento.
 
 // Exemplo de POO
-class Personagem {
+abstract class Personagem {
     public $nome;
     private $vida;
     public $dano;
@@ -38,9 +38,8 @@ class Personagem {
         $this->vida = $vida;
     }
 
-    public function atacar() {
-        echo "$this->nome realizou um ataque!";
-    }
+    // Toda classe filha deverá implementar atacar()
+    abstract public function atacar();
 }
 
 class Guerreiro extends Personagem {
@@ -62,15 +61,32 @@ class Mago extends Personagem {
     }
 }
 
-$guerreiro = new Guerreiro("Lucas", 100, 10);
-$mago = new Mago("Aurora", 50, 5);
-$personagem = new Personagem("Chloe", 30, 3);
+class Curandeiro extends Personagem {
 
-$personagens = [$guerreiro, $mago, $personagem];
+    public function atacar() {
+        echo "$this->nome atacou com uma faca!\n";
+    }
+
+    public function curar(Personagem $alvo, int $quantidade) {
+        $novaVida = $alvo->getVida() + $quantidade;
+        $alvo->setVida($novaVida);
+        echo "$this->nome curou {$alvo->nome} em $quantidade HP!\n";
+    }
+}
+
+$guerreiro = new Guerreiro("Lucas", 50, 10);
+$mago = new Mago("Aurora", 100, 5);
+$curandeiro = new Curandeiro("Chloe", 100, 3);
+
+$personagens = [$guerreiro, $mago, $curandeiro];
 
 foreach($personagens as $p) {
     $p->atacar();
 }
+
+$curandeiro->curar($guerreiro, 50);
+
+// https://look.devlook.xyz/resources/views/projetos/poo.php
 
 //1. O que é uma classe?
 //Um molde para criar objetos
