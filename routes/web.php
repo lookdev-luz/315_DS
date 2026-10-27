@@ -11,7 +11,7 @@
             //outras atividades...
         ],
         'POST' => [
-            'helpdesk' => [new HelpdeskController(), '']
+            'helpdesk' => [new HelpdeskController(), 'salvar']
         ]
     ];
 
