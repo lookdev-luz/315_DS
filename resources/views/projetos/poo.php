@@ -84,11 +84,15 @@ foreach($personagens as $p) {
     $p->atacar();
 }
 
-$guerreiro->getVida();
+// Diminuindo a vida do Guerreiro
+$guerreiro->setVida(60);
 
-$curandeiro->curar($guerreiro, 50);
+echo "Vida antes da cura: " . $guerreiro->getVida() . "\n";
 
-$guerreiro->getVida();
+// Chloe cura Lucas
+$curandeiro->curar($guerreiro, 25);
+
+echo "Vida depois da cura: " . $guerreiro->getVida() . "\n";
 
 // https://look.devlook.xyz/resources/views/projetos/poo.php
 
