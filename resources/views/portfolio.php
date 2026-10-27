@@ -111,10 +111,9 @@
                     <div class="projeto-numero">
                         01
                     </div>
-                    <h3>Verificação de idade</h3>
+                    <h3>Projeto 01</h3>
                     <p>
-                        Sistema desenvolvido para praticar
-                        formulários e manipulação de dados.
+                        Projeto 01.
                     </p>
                     <div class="tecnologias">
                         <span>HTML</span>
