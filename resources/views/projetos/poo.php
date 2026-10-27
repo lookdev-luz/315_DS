@@ -84,7 +84,11 @@ foreach($personagens as $p) {
     $p->atacar();
 }
 
+$guerreiro->getVida();
+
 $curandeiro->curar($guerreiro, 50);
+
+$guerreiro->getVida();
 
 // https://look.devlook.xyz/resources/views/projetos/poo.php
 
